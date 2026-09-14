@@ -96,13 +96,7 @@ python 05_robustness_analysis.py   # → ICC per feature under mask perturbation
 **Feature extraction**
 - Custom SimpleITK pipeline with physically-defined ROIs: intratumoral radial zones, 5 mm / 10 mm peritumoral rings, ±1 mm boundary zone, five 3 mm perilesional bands
 - Non-IBSI features (radial profile, rim/core contrast, 3D angular heterogeneity, perilesional attenuation slope, necrosis fraction, capsule score, tumor-to-liver ratio) are defined mathematically in **Supplementary Material 1** of the manuscript
-- Standard first-order statistics conform to IBSI definitions; gradient magnitude uses σ = 0.5 mm Gaussian (minor deviation from IBSI 3.7, noted in manuscript)
-
-**Effect size**
-
-$$\eta^2 = \frac{H - k + 1}{n - k}$$
-
-where *H* = Kruskal-Wallis statistic, *k* = number of groups (k = 3), *n* = total sample size.
+- Standard first-order statistics conform to IBSI definitions; gradient magnitude uses σ = 0.5 mm Gaussian (minor deviation from IBSI 3.7, noted in 
 
 **FDR correction**
 - Benjamini-Hochberg procedure, backward-cumulative-minimum formulation
